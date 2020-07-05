@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://psiang.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-07-05T17:43:10.536Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://psiang.github.io/tags/index.html</loc>
+    
+    <lastmod>2020-07-05T17:40:16.010Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://psiang.github.io/post/def3afa0.html</loc>
     
     <lastmod>2020-07-05T15:42:49.986Z</lastmod>
