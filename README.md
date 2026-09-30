@@ -4,7 +4,7 @@ Public site: https://psiang.github.io/
 
 Plain HTML and CSS, served by GitHub Pages from `master` at the repository root. No build step or dependencies are required. `.nojekyll` keeps the published files unchanged.
 
-- `index.html`: biography, research interests, research projects, publication, and contact details.
+- `index.html`: biography, publications, manuscripts, and contact details.
 - `assets/home.css`: responsive homepage styles.
 - `blog/`: migrated snapshot of the 2020 Hexo / Butterfly blog.
 - Existing article, tag, archive and category HTML paths redirect to `/blog/`, preserving query strings and fragments. Original image and script paths remain available for old external links.
@@ -20,6 +20,8 @@ The archived article text and bundled images are preserved. Broken pre-existing 
 ## Editing
 
 Edit `index.html` and `assets/home.css`, then commit to `master`. Preview with `python -m http.server 8000`.
+
+The research profile presents program analysis and formal reasoning as complementary approaches to reliable foundation-model agents. SPONGE covers efficient interactive analysis; ReCoNav covers task formalization and agent decision checking. Speculative future applications are not listed as completed work.
 
 SPONGE metadata was verified against its final source and the HKUST research portal. Its assigned ACM DOI was not resolving at launch, so the publication link uses the HKUST record. ReCoNav is listed as a manuscript under review with its submitted title and a short description; add a full author list and a preprint link once verified public resources are available.
 

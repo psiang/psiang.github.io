@@ -4,73 +4,49 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sixiang Peng | HKUST</title>
-  <meta name="description" content="Sixiang Peng is a PhD student at HKUST working on reliable reasoning and planning for embodied agents, vision-and-language navigation, and program analysis.">
-  <meta name="theme-color" content="#183b56">
+  <meta name="description" content="Sixiang Peng, PhD student at HKUST. Research on program analysis, formal reasoning, and reliable foundation-model agents.">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Sixiang Peng | HKUST">
-  <meta property="og:description" content="Reliable embodied agents · Vision-and-language navigation · Program analysis">
+  <meta property="og:description" content="Program analysis and formal reasoning for reliable foundation-model agents.">
   <meta property="og:url" content="https://psiang.github.io/">
   <link rel="canonical" href="https://psiang.github.io/">
   <link rel="icon" href="/assets/monogram.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/home.css">
+  <link rel="stylesheet" href="/assets/home.css?v=20260930-academic">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <div class="shell">
-    <header class="topbar">
-      <a class="wordmark" href="/" aria-label="Sixiang Peng home">Sixiang Peng</a>
-      <nav aria-label="Main navigation">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main" class="page">
+    <header class="identity">
+      <h1>Sixiang Peng <span lang="zh-CN">彭思翔</span></h1>
+      <p class="affiliation">PhD Student · Computer Science and Engineering<br>The Hong Kong University of Science and Technology</p>
+      <nav class="profile-links" aria-label="Contact and profile links">
+        <a href="mailto:spengaf@cse.ust.hk">Email</a>
+        <a href="https://github.com/psiang">GitHub</a>
+        <a href="https://orcid.org/0009-0004-9155-7142">ORCID</a>
         <a href="/blog/">Blog</a>
       </nav>
     </header>
-    <div class="layout">
-      <aside class="profile" aria-label="Profile">
-        <h1 class="name">Sixiang Peng<span class="chinese-name" lang="zh-CN">彭思翔</span></h1>
-        <div class="role">PhD Student</div>
-        <p class="affiliation">Computer Science and Engineering<br>The Hong Kong University of<br>Science and Technology</p>
-        <div class="profile-links">
-          <a href="https://github.com/psiang">GitHub</a>
-          <a href="https://orcid.org/0009-0004-9155-7142">ORCID</a>
-        </div>
-        <a class="email" href="mailto:spengaf@cse.ust.hk">spengaf@cse.ust.hk</a>
-        <p class="location">Hong Kong</p>
-      </aside>
-      <main id="main">
-        <div class="intro">
-          <p>I am a PhD student in Computer Science and Engineering at <a href="https://hkust.edu.hk/">HKUST</a>, advised by <a href="https://home.cse.ust.hk/~charlesz/">Prof. Charles Zhang</a>.</p>
-          <p>My research focuses on <strong>reliable reasoning and planning for embodied agents</strong>. I study how agents can turn natural-language instructions into executable plans while respecting constraints over long tasks.</p>
-          <p>My background is in static program analysis. Across these areas, I am interested in combining learned judgments with explicit structure, logical reasoning, and verification.</p>
-        </div>
-        <section class="section" id="research" aria-labelledby="research-heading">
-          <h2 id="research-heading">Research interests</h2>
-          <ul class="research-list">
-            <li><h3>Reliable embodied agents</h3><p>Grounding instructions, reasoning about constraints, and checking decisions before execution.</p></li>
-            <li><h3>Vision-and-language navigation</h3><p>Long-horizon navigation with requirements that shape both goal selection and the route.</p></li>
-            <li><h3>Program analysis</h3><p>Precise and efficient value-flow reasoning for interactive software analysis.</p></li>
-          </ul>
-        </section>
-        <section class="section" id="publications" aria-labelledby="publications-heading">
-          <h2 id="publications-heading">Selected research &amp; publications</h2>
-          <article class="publication" id="reconav">
-            <div class="pub-meta"><span class="venue pending">UNDER REVIEW</span><span>2026 · Embodied AI</span></div>
-            <h3>ReCoNav: Reliable Constrained Long-Horizon Vision-and-Language Navigation via a Determination Engine</h3>
-            <p class="summary">ReCoNav combines an instruction contract with a determination engine to propagate constraints across interpretation, grounding, and route planning. It uses derived evidence to determine choices, verify judgments, and guide repair, while vision-language models resolve the remaining semantics.</p>
-            <p class="status-note">Manuscript under review · 2026</p>
-          </article>
-          <article class="publication" id="sponge">
-            <div class="pub-meta"><span class="venue">OOPSLA 2026</span><span>Program analysis</span></div>
-            <h3><a href="https://researchportal.hkust.edu.hk/en/publications/sponge-adaptive-boundary-anchored-indexing-for-online-value-flow-/">SPONGE: Adaptive Boundary-Anchored Indexing for Online Value-Flow Queries</a></h3>
-            <p class="authors"><strong>Sixiang Peng</strong>, Chenyang Sun, Wei Chen, Bowen Zhang, Charles Zhang</p>
-            <p class="summary">SPONGE accelerates online value-flow queries by selectively indexing feasible path segments at procedure boundaries, then reusing them during search.</p>
-            <div class="paper-links">
-              <a href="https://researchportal.hkust.edu.hk/en/publications/sponge-adaptive-boundary-anchored-indexing-for-online-value-flow-/">Publication record</a>
-              <a href="https://2026.splashcon.org/profile/pengsixiang">Conference profile</a>
-            </div>
-            <details class="pub-cite">
-              <summary>BibTeX</summary>
-              <pre><code>@article{peng2026sponge,
+
+    <section class="bio" aria-label="About me">
+      <p>I am a PhD student at <a href="https://hkust.edu.hk/">HKUST</a>, advised by <a href="https://home.cse.ust.hk/~charlesz/">Prof. Charles Zhang</a>. My research lies at the intersection of <strong>program analysis, formal reasoning, and reliable foundation-model agents</strong>. I am interested in how explicit specifications, structured representations, and constraint solving can complement LLMs and VLMs.</p>
+      <p>My work explores two complementary questions: how to make high-precision analysis efficient for interactive use, and how to structure agent tasks so that decisions can be derived and checked. <a href="#sponge">SPONGE</a> addresses the first through online value-flow queries. My recent work, <a href="#reconav">ReCoNav</a>, explores the second in constrained long-horizon vision-and-language navigation, using instruction contracts and symbolic reasoning alongside model-based grounding.</p>
+      <p class="opportunities">I am interested in research internships and collaborations on reliable AI agents and the interface between AI and formal analysis. Please feel free to <a href="mailto:spengaf@cse.ust.hk">get in touch</a>.</p>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Publications</h2>
+      <article class="paper" id="sponge">
+        <h3><a href="https://researchportal.hkust.edu.hk/en/publications/sponge-adaptive-boundary-anchored-indexing-for-online-value-flow-/">SPONGE: Adaptive Boundary-Anchored Indexing for Online Value-Flow Queries</a></h3>
+        <p class="authors"><strong>Sixiang Peng</strong>, Chenyang Sun, Wei Chen, Bowen Zhang, Charles Zhang</p>
+        <p class="venue"><strong>OOPSLA 2026</strong> · Proceedings of the ACM on Programming Languages</p>
+        <p class="paper-summary">Adaptive indexing for high-precision, SMT-backed value-flow analysis, designed for interactive security auditing and autonomous program investigation.</p>
+        <div class="paper-links">
+          <a href="https://researchportal.hkust.edu.hk/en/publications/sponge-adaptive-boundary-anchored-indexing-for-online-value-flow-/">Publication</a>
+          <a href="https://2026.splashcon.org/profile/pengsixiang">Conference</a>
+          <details class="citation">
+            <summary>BibTeX</summary>
+            <pre><code>@article{peng2026sponge,
   title   = {SPONGE: Adaptive Boundary-Anchored Indexing
              for Online Value-Flow Queries},
   author  = {Peng, Sixiang and Sun, Chenyang and Chen, Wei
@@ -82,17 +58,21 @@
   year    = {2026},
   doi     = {10.1145/3839472}
 }</code></pre>
-            </details>
-          </article>
-        </section>
-        <section class="section contact" aria-labelledby="contact-heading">
-          <h2 id="contact-heading">Get in touch</h2>
-          <p>I welcome conversations about reliable AI agents, embodied intelligence, and program analysis.</p>
-          <p><a href="mailto:spengaf@cse.ust.hk">spengaf@cse.ust.hk</a></p>
-        </section>
-      </main>
-    </div>
-    <footer class="footer"><span>© 2026 Sixiang Peng</span><span>Updated September 2026 · <a href="/blog/">Blog archive</a></span></footer>
-  </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="manuscripts" aria-labelledby="manuscripts-heading">
+      <h2 id="manuscripts-heading">Manuscripts</h2>
+      <article class="paper" id="reconav">
+        <h3>ReCoNav: Reliable Constrained Long-Horizon Vision-and-Language Navigation via a Determination Engine</h3>
+        <p class="venue">Manuscript under review, 2026.</p>
+        <p class="paper-summary">An instruction contract formalizes scoped navigation requirements over complete routes. A determination engine separates uncertain semantic grounding from decisions that can be derived and checked, connecting target selection with constraint-aware planning.</p>
+      </article>
+    </section>
+
+    <footer>Last updated: September 2026 · <a href="mailto:spengaf@cse.ust.hk">spengaf@cse.ust.hk</a></footer>
+  </main>
 </body>
 </html>
