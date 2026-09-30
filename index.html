@@ -4,43 +4,53 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sixiang Peng | HKUST</title>
-  <meta name="description" content="Sixiang Peng, PhD student at HKUST. Research on program analysis, formal reasoning, and reliable foundation-model agents.">
+  <meta name="description" content="Sixiang Peng, PhD student at HKUST. Research interests in the co-design of formal analysis and AI agents for reliable and efficient reasoning.">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Sixiang Peng | HKUST">
-  <meta property="og:description" content="Program analysis and formal reasoning for reliable foundation-model agents.">
+  <meta property="og:description" content="Formal analysis and AI agents: reliable and efficient reasoning through their co-design.">
   <meta property="og:url" content="https://psiang.github.io/">
   <link rel="canonical" href="https://psiang.github.io/">
   <link rel="icon" href="/assets/monogram.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/home.css?v=20260930-academic">
+  <link rel="stylesheet" href="/assets/home.css?v=20260930-refined">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <main id="main" class="page">
-    <header class="identity">
-      <h1>Sixiang Peng <span lang="zh-CN">彭思翔</span></h1>
-      <p class="affiliation">PhD Student · Computer Science and Engineering<br>The Hong Kong University of Science and Technology</p>
-      <nav class="profile-links" aria-label="Contact and profile links">
-        <a href="mailto:spengaf@cse.ust.hk">Email</a>
-        <a href="https://github.com/psiang">GitHub</a>
-        <a href="https://orcid.org/0009-0004-9155-7142">ORCID</a>
-        <a href="/blog/">Blog</a>
-      </nav>
+    <header class="profile">
+      <div class="identity">
+        <h1>Sixiang Peng <span lang="zh-CN">彭思翔</span></h1>
+        <p class="position">PhD Student · Computer Science and Engineering</p>
+        <p class="institution"><a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology</a></p>
+        <p class="advisor">Advised by <a href="https://home.cse.ust.hk/~charlesz/">Prof. Charles Zhang</a></p>
+        <address class="contact">
+          <span class="contact-label">Email</span>
+          <a href="mailto:spengaf@cse.ust.hk">spengaf@cse.ust.hk</a>
+        </address>
+        <nav class="profile-links" aria-label="Professional profiles">
+          <a href="https://github.com/psiang">GitHub</a>
+          <a href="https://orcid.org/0009-0004-9155-7142">ORCID</a>
+        </nav>
+      </div>
+      <!-- Replace this empty portrait area with a photograph when one is available. -->
+      <div class="portrait" role="img" aria-label="Reserved space for a profile photograph">
+        <span>Photo</span>
+      </div>
     </header>
 
-    <section class="bio" aria-label="About me">
-      <p>I am a PhD student at <a href="https://hkust.edu.hk/">HKUST</a>, advised by <a href="https://home.cse.ust.hk/~charlesz/">Prof. Charles Zhang</a>. My research lies at the intersection of <strong>program analysis, formal reasoning, and reliable foundation-model agents</strong>. I am interested in how explicit specifications, structured representations, and constraint solving can complement LLMs and VLMs.</p>
-      <p>My work explores two complementary questions: how to make high-precision analysis efficient for interactive use, and how to structure agent tasks so that decisions can be derived and checked. <a href="#sponge">SPONGE</a> addresses the first through online value-flow queries. My recent work, <a href="#reconav">ReCoNav</a>, explores the second in constrained long-horizon vision-and-language navigation, using instruction contracts and symbolic reasoning alongside model-based grounding.</p>
-      <p class="opportunities">I am interested in research internships and collaborations on reliable AI agents and the interface between AI and formal analysis. Please feel free to <a href="mailto:spengaf@cse.ust.hk">get in touch</a>.</p>
+    <section class="research section" aria-labelledby="research-heading">
+      <h2 id="research-heading">Research interests</h2>
+      <p>I am interested in the <strong>co-design of formal analysis and AI agents</strong> for reliable and efficient reasoning. My work explores two complementary directions: making rigorous analysis practical for interactive agent workloads, and making agent tasks amenable to derivation, checking, and constraint solving.</p>
+      <p><a href="#sponge">SPONGE</a> studies efficient online value-flow analysis. My recent work, <a href="#reconav">ReCoNav</a>, formalizes constrained long-horizon navigation so that decisions supported by grounded premises can be derived and checked, while LLMs and VLMs handle unresolved semantics.</p>
+      <p class="opportunities">I welcome research collaborations and internship opportunities in these areas.</p>
     </section>
 
-    <section class="section" id="publications" aria-labelledby="publications-heading">
+    <section class="section papers" id="publications" aria-labelledby="publications-heading">
       <h2 id="publications-heading">Publications</h2>
       <article class="paper" id="sponge">
         <h3><a href="https://researchportal.hkust.edu.hk/en/publications/sponge-adaptive-boundary-anchored-indexing-for-online-value-flow-/">SPONGE: Adaptive Boundary-Anchored Indexing for Online Value-Flow Queries</a></h3>
         <p class="authors"><strong>Sixiang Peng</strong>, Chenyang Sun, Wei Chen, Bowen Zhang, Charles Zhang</p>
-        <p class="venue"><strong>OOPSLA 2026</strong> · Proceedings of the ACM on Programming Languages</p>
-        <p class="paper-summary">Adaptive indexing for high-precision, SMT-backed value-flow analysis, designed for interactive security auditing and autonomous program investigation.</p>
+        <p class="venue"><strong>OOPSLA 2026</strong><span class="venue-divider">·</span><em>Proceedings of the ACM on Programming Languages</em></p>
         <div class="paper-links">
           <a href="https://researchportal.hkust.edu.hk/en/publications/sponge-adaptive-boundary-anchored-indexing-for-online-value-flow-/">Publication</a>
           <a href="https://2026.splashcon.org/profile/pengsixiang">Conference</a>
@@ -60,19 +70,28 @@
 }</code></pre>
           </details>
         </div>
+        <p class="keywords"><span class="field-label">Keywords</span>Static analysis; value-flow analysis; online queries; indexing; SMT solving</p>
+        <details class="abstract" open>
+          <summary aria-label="Abstract for SPONGE">Abstract</summary>
+          <p>The application of high-precision value-flow analysis is experiencing a paradigm shift from planned executions to online ad hoc queries driven by human auditors and AI agents. However, existing techniques struggle in this interactive setting: exhaustive offline tabulation is fundamentally intractable, while memoryless online search suffers from redundant exploration and SMT invocations. To bridge this gap, we propose SPONGE, a novel two-phase framework that accelerates ad hoc queries through boundary-anchored indexing. Offline, SPONGE employs an adaptive-depth strategy to selectively precompute feasible value-flow segments at critical procedure boundaries, optimizing SMT allocation based on traversal probability and search space complexity. Online, it utilizes an index-guided push-down search with lazy expansion to dynamically stitch these pre-verified segments, effectively bypassing redundant state exploration and pruning unsatisfiable paths. We evaluated SPONGE on 9 C/C++ projects (up to 3.8 million LoC). Results demonstrate that SPONGE drops the 95th-percentile online query time from nearly 270 s to under 50 s compared to a baseline search. Furthermore, the adaptive strategy reduces offline indexing time by 75% over a uniform approach, amortizing the offline cost in fewer than 300 queries for workloads dominated by complex queries.</p>
+        </details>
       </article>
     </section>
 
-    <section class="section" id="manuscripts" aria-labelledby="manuscripts-heading">
+    <section class="section papers" id="manuscripts" aria-labelledby="manuscripts-heading">
       <h2 id="manuscripts-heading">Manuscripts</h2>
       <article class="paper" id="reconav">
         <h3>ReCoNav: Reliable Constrained Long-Horizon Vision-and-Language Navigation via a Determination Engine</h3>
-        <p class="venue">Manuscript under review, 2026.</p>
-        <p class="paper-summary">An instruction contract formalizes scoped navigation requirements over complete routes. A determination engine separates uncertain semantic grounding from decisions that can be derived and checked, connecting target selection with constraint-aware planning.</p>
+        <p class="venue">Manuscript under review<span class="venue-divider">·</span>2026</p>
+        <p class="keywords"><span class="field-label">Keywords</span>Vision-and-language navigation; task contracts; constraint reasoning; grounding; planning and verification</p>
+        <details class="abstract" open>
+          <summary aria-label="Abstract for ReCoNav">Abstract</summary>
+          <p>Conventional vision-and-language navigation (VLN) asks an agent to follow a described route to a destination. Practical missions can require multiple ordered visits, with hard constraints and preferences governing both target selection and connecting routes. Existing agents use memories, maps, or constraint-guided planning, but reliably propagating scoped requirements across interpretation, grounding, and complete-route planning remains challenging. We introduce ReCoNav, whose instruction contract models route requirements for joint target and route selection. Its Determination Engine uses scene and task rules to propagate route constraints across interpretation, grounding, and planning. Derived evidence determines choices, verifies judgments, and guides repair; vision-language models supply unresolved semantics. We construct a benchmark of 192 scene-grounded tasks across nine indoor scenes to evaluate joint target and route satisfaction. Existing methods show low satisfaction and frequent timeouts. On 44 constraint-resolving tasks without the added time limit, global scene access helps but remains insufficient: ReCoNav achieves 81.82% full instruction satisfaction, versus 29.55% for the best evaluated existing method given global scene information and 38.64% for direct planning with feedback sharing our scene information, backbone, and solver. Across four backbones, ReCoNav improves satisfaction with fewer model tokens than this feedback baseline; ablations support explicit contract-based planning, global determination, and verification with repair.</p>
+        </details>
       </article>
     </section>
 
-    <footer>Last updated: September 2026 · <a href="mailto:spengaf@cse.ust.hk">spengaf@cse.ust.hk</a></footer>
+    <footer>Last updated September 2026</footer>
   </main>
 </body>
 </html>
