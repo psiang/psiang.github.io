@@ -88,16 +88,13 @@ h1 span {
   font-size: .9375rem;
 }
 .portrait {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  display: block;
   width: 11rem;
+  height: auto;
   aspect-ratio: 4 / 5;
-  padding-bottom: .75rem;
+  object-fit: contain;
   border: 1px solid var(--rule);
   background: #f6f8fa;
-  color: #68727e;
-  font-size: .8125rem;
 }
 .section { margin-top: 2.5rem; }
 h2 {
@@ -215,7 +212,7 @@ footer {
   .page { padding-top: 2rem; }
   .profile { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding-bottom: 1.75rem; }
   h1 span { display: inline-block; margin: 0 0 0 .6rem; }
-  .portrait { width: 7rem; aspect-ratio: 1; padding-bottom: .5rem; }
+  .portrait { width: 8rem; }
   h2 { font-size: 1.5rem; }
   .paper h3 { font-size: 1.125rem; }
   .venue-divider { margin: 0 .35rem; }
